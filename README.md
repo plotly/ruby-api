@@ -10,17 +10,17 @@ args = [[0,1,2], [3,1,6]]
 
 kwargs = {
   filename: 'plot from API',
-	fileopt: 'overwrite',
-	style: { type: 'bar' },
-	traces: [0,3,5],
-	layout: {
-	  title: 'Experimental Data'
-	},
-	world_readable: true
+  fileopt: 'overwrite',
+  style: { type: 'bar' },
+  traces: [0,3,5],
+  layout: {
+    title: 'Experimental Data'
+  },
+  world_readable: true
 }
 
 plotly.plot(args, kwargs) do |response|
-  puts response['url]
+  puts response['url']
 end
 
 
