@@ -22,8 +22,6 @@ kwargs = {
 plotly.plot(args, kwargs) do |response|
   puts response['url']
 end
-
-
 ```
 
 ###License
