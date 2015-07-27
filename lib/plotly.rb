@@ -17,7 +17,6 @@ class PlotLy
     
     @plotter = Net::HTTP.new(PlotLyUri.host, PlotLyUri.port)
     @plotter.use_ssl = true
-    @plotter.verify_mode = OpenSSL::SSL::VERIFY_NONE
     
   end
   
